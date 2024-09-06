@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wish 💝</title>
+    <style>
+        /* General Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+        body {
+            margin: 0;
+            color: #fff;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            overflow-x: hidden;
+        }
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        #background-video {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            background-size: cover;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+        .hero-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #ff8c00;
+            letter-spacing: 3px;
+            animation: fadeInDown 2s ease-in-out;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px;
+            background-color: #1a2a33;
+        }
+        .content-box {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .content-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+        .content-title {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .content-text {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .content-box {
+                margin: 10px;
+                max-width: 100%;
+            }
+        }
+        .last {
+            flex: 1;
+            min-width: 300px;
+            max-width: 1400px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        .last:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <h1 class="hero-title">“నా దూరాన్ని ఇష్టపడే నువ్వు, నిన్ను దూరం నుండి ఇష్టపడే నేను ❤️‍🔥.”</h1>
+        <p class="hero-subtitle">Netho chala cheppali konchem kindaki 👇 scroll cheyyava</p>
+        <video autoplay muted loop id="background-video">
+            <source src="letters.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content-section">
+        <div class="content-box">
+            <h3 class="content-title">“True love stories never have endings.”</h3>
+            <p class="content-text">Konni sarlu anipistundhi nuvvu nannu ignore cheyadam valle nenu inthala love cheyagalugutunnanemo ani. Nuvvu natho chat chesinappudu nenu netho annau kada gurtundha na gurinchi chepte malli nene ibbandhi padali ani naku aa roju enduku ala anipinchindho teliyadhu but e roju telisindhi, kani nenu entha ibbadhi padina naku ne meda unna love mundhu adi chala chinnadi ga anipistundhi. Nenu okkasari pattukunte vadilesi vellipoye type kadu, nenu ninnu vere abbailatho chusinappudu naku chala jealous feeling vastundhi telusa kani neku cheppalekapotunna, nuvvu ne life lo vere abbaini oohinchukuntavemo teliyadhu kani nenu ayte na life lo and ne life lo kuda vere vallani oohinchukolekapotunna aa place lo evarini oohinchukundam anna nuvve gurtu vastunnav</p>
+        </div>
+        <div class="content-box">
+            <h3 class="content-title">“Pleasure of love lasts but a moment. Pain of love lasts a lifetime.”</h3>
+            <p class="content-text">Nuvvu entha ignore chesina nenu matram ninnu chudakunda undalekpotunna, ninnu kanisam okka roju chudakapoina chala kastam ga untundhi netho chala cheppali, panchukovali ani anipistundhi kani na face ae nachanappudu nen em cheyyalenu kada. naku ne problem ento ardam ayyaindhi kani nenu ne answer ni tesukolekapotunna, ayna nenu neku istam lekapothe enti nuvvu naku istam kada aa okka reason chalu ninnu vadalakunda undataniki. Nenu ninnu marchipoye vidhamga preminchaledu and ninnu marchipolenu. Nuvvu evariki bhayapadutunnavo teliyadhu kani naku matram aa bhayam ledu beacuse nenu em tappu cheyyaledu. Nenu netho matladali ani prathiroju eduru chustune unnanu kani neku nenu antha mukyam kadani prathiroju teliyajesthune unnavu. Edhuru chuse vallani adugu second viluva enthoo</p>
+        </div>
+        <div class="content-box">
+            <h3 class="content-title">”My wish is that you may be loved to the point of madness.”</h3>
+            <p class="content-text">Ivi vini neku anipinchachu evadu ra vedu inka nannu vadalada ani but nenu ninnu chudataniki pade tapana and ninnu chusinappudu na face lo vache smile inkevarini chusina ravuu. Nen heartful ga cheptunna nuvvu ante naku chala chala chala istam maaa💖. Nuvvu emaina anuko kani nenu ayte ninnu antha easy ga odulukonu, naku pattudhala undi edi sagam chesi vadileyyanu. Nenu okkate nammutha kastam lenidhe sukam radhu neku kavalsindhi dhorakadam kastam ga unte adi nedhi ani ardam. Adi neku dhakkadam anedhi ne prayatnam batti untundhi.......</p>
+        </div>
+        <div class="last">
+            <p>Finally one thing</p>
+            <h2>“Forget the past; look forward to the future, for the best things are yet to come.The purpose of our lives is to be happy" 
+                ”</h2>
+        </div>
+    </div>
+</body>
+</html>
